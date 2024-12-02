@@ -18,9 +18,9 @@ export const nextJsConfig = [
   eslintConfigPrettier,
   ...tseslint.configs.recommended,
   {
-    ...pluginReact.configs.flat.recommended,
+    ...pluginReact.configs.flat?.recommended,
     languageOptions: {
-      ...pluginReact.configs.flat.recommended.languageOptions,
+      ...pluginReact.configs.flat?.recommended?.languageOptions,
       globals: {
         ...globals.serviceworker,
       },

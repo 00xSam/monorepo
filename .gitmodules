@@ -1,3 +1,6 @@
 [submodule "packages/vault-sdk"]
 	path = packages/vault-sdk
 	url = git@work.github.com:mercurial-finance/vault-sdk.git
+[submodule "packages/dynamic-amm-sdk"]
+	path = packages/dynamic-amm-sdk
+	url = git@work.github.com:mercurial-finance/mercurial-dynamic-amm-sdk.git

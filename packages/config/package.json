@@ -1,8 +1,12 @@
 {
-  "name": "@repo/config",
-  "version": "0.0.0",
+  "name": "@meteora-ag/config",
+  "version": "0.1.0",
   "type": "module",
-  "private": true,
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
   "exports": {
     "./eslint/base": "./eslint/base.js",
     "./eslint/next-js": "./eslint/next.js",
@@ -10,6 +14,9 @@
     "./typescript/react-library": "./typescript/react-library.json",
     "./typescript/nextjs": "./typescript/nextjs.json",
     "./typescript/base": "./typescript/base.json"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json && tsc -p tsconfig.esm.json"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^15",
