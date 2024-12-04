@@ -1,0 +1,29 @@
+name: Check submodules is main branch
+
+on:
+  pull_request:
+    paths-ignore:
+      - "docs/**"
+      - "README.md"
+      - "LICENSE"
+      - ".editorconfig"
+    branches:
+      - master
+
+jobs:
+  check-submodules:
+    name: Check Submodules
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v3
+      - name: Check Vault SDK
+        uses: jtmullen/submodule-branch-check-action@v1
+        with:
+          path: "packages/vault-sdk"
+          branch: "main"
+          first_parent: true
+          fetch_depth: "50"
+          pass_if_unchanged: true
+          require_head: true
+          disable_progression: true
