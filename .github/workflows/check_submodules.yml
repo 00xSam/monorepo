@@ -17,6 +17,12 @@ jobs:
     steps:
       - name: Checkout this repo
         uses: actions/checkout@v3
+      - name: Checkout submodule repo
+        uses: actions/checkout@v4
+        with:
+          repository: mercurial-finance/vault-sdk
+          path: "https://github.com/mercurial-finance/vault-sdk"
+          token: ${{ secrets.ACTION_PAT }}
       - name: Check Vault SDK
         uses: jtmullen/submodule-branch-check-action@v1
         with:
