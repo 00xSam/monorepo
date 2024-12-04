@@ -29,4 +29,3 @@ jobs:
           pass_if_unchanged: true
           require_head: true
           disable_progression: true
-          token: ${{ secrets.ACTION_PAT }}
