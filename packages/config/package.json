@@ -13,7 +13,8 @@
     "./eslint/react-internal": "./eslint/react-internal.js",
     "./typescript/react-library": "./typescript/react-library.json",
     "./typescript/nextjs": "./typescript/nextjs.json",
-    "./typescript/base": "./typescript/base.json"
+    "./typescript/base": "./typescript/base.json",
+    "./typescript/sdk": "./typescript/sdk.json"
   },
   "scripts": {
     "build": "rm -rf dist && tsc -p tsconfig.build.json && tsc -p tsconfig.esm.json"

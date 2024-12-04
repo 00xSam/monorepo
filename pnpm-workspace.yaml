@@ -1,5 +1,6 @@
 packages:
   - "apps/*"
   - "packages/*"
-  - "packages/vault-sdk/*"
-  - "packages/dynamic-amm-sdk/*"
+  - "packages/vault-sdk/ts-client"
+  - "packages/dynamic-amm-sdk/ts-client"
+  - "packages/farm-sdk/ts-client"

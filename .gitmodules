@@ -4,3 +4,6 @@
 [submodule "packages/dynamic-amm-sdk"]
 	path = packages/dynamic-amm-sdk
 	url = git@work.github.com:mercurial-finance/mercurial-dynamic-amm-sdk.git
+[submodule "packages/farm-sdk"]
+	path = packages/farm-sdk
+	url = git@work.github.com:MeteoraAg/reward-pool.git

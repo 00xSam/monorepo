@@ -2,16 +2,15 @@
   "name": "meteora-monorepo",
   "private": true,
   "scripts": {
+    "postinstall": "pnpm i --filter=@meteora-ag/* --shared-workspace-lockfile=false",
     "build": "turbo build",
-    "dev": "npx concurrently 'turbo dev' 'npx turbowatch ./turbowatch.ts'",
+    "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "concurrently": "^9.1.0",
     "prettier": "^3.2.5",
     "turbo": "^2.3.3",
-    "turbowatch": "^2.29.4",
     "typescript": "5.5.4"
   },
   "resolutions": {
