@@ -1,4 +1,4 @@
-name: Check submodules is main branch
+name: Check submodules
 
 on:
   pull_request:
@@ -17,7 +17,9 @@ jobs:
     steps:
       - name: Checkout this repo
         uses: actions/checkout@v3
-      - name: Check Vault SDK
+        with:
+          submodules: true
+      - name: Check Vault SDK point to main branch
         uses: jtmullen/submodule-branch-check-action@v1
         with:
           path: "packages/vault-sdk"
