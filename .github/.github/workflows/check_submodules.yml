@@ -1,4 +1,4 @@
-name: Typescript SDK CI
+name: Check submodules is main branch
 
 on:
   pull_request:
