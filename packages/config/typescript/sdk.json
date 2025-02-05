@@ -16,6 +16,7 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "preserveSymlinks": true
   }
 }
